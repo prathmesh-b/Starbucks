@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: #017143;
+    clip-path: circle(80% at right 1000px);
+    z-index: -1;
+}
+
+/* nav section    */
+
+nav{
+    padding: .5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img{
+    width: 80px;
+}
+
+nav .links{
+    display: flex;
+    align-items: center;
+}
+
+nav .links a{
+    margin: 0 1rem;
+    color: #454545;
+    transition: all .3s ease-in-out;
+}
+
+nav .links a:hover {
+    color: #017143;
+    font-weight: 500;
+    border-bottom: 5px solid #017143;
+}
+
+  /* content    */
+
+
+  .content {
+      padding: 2rem 3rem;
+  }
+
+  .content .texts {
+      float: left;
+      width: 50%;
+      margin-top: 3rem;
+  }
+
+  .heading {
+      font-size: 3rem;
+      font-weight: 500;
+      color: #454545;
+  }
+
+  .heading span {
+      color: #017143;
+      font-size: 4rem;
+      font-weight: 800;
+  }
+
+  .texts button {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      background: #017143;
+      outline: none;
+      border: 2px solid transparent;
+      border-radius: 2rem;
+      padding: .5rem 1.5rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: color .5s ease-in-out;
+  }
+
+  .texts button:hover{
+      color: #017143;
+      border-color: #017143;
+      background: #fff;
+  }
+
+  .pic{
+      padding-left: 5rem;
+      float: left;
+  }
+  
+  .pic #img{
+      width: 300px;
+      transition: all .5s ease-in-out;
+  }
+
+  .pic #img:hover {
+      transform: rotate(5deg);
+  }
+
+  .pic .social {
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  .pic .social a i {
+      color: #fff;
+      font-size: 2rem;
+      margin: 1rem 0;
+      transition: all .2s ease-in-out;
+  }
+
+  .pic .social a i:hover {
+      color: #454545;
+}
+
+.cups{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cups a img {
+    width: 100px;
+    margin: 0 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.cups a img:hover {
+    transform: translateY(-30px) rotate(-20deg);
+}
+
+
+

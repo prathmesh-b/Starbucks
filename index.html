@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <script src="https://kit.fontawesome.com/d4c58c9243.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="circle" id="circle"></div>
+<nav>
+    <div class="logo">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">What's New</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="texts">
+        <h1 class="heading">
+            It's not just Cofee <br>
+            It's <span id="starbucks">Starbucks</span>
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum repellendus recusandae nostrum voluptas itaque fuga, quod dolorem sunt sint?</p>
+        <button>Learn More</button>
+    </div>
+    <div class="pic">
+        <div class="img"><img id="img" src="img/img1.png" alt=""></div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="cups">
+        <a href="#img"><img onclick="imgSlider('img/img1.png'); changecircleColor('#107143')" src="img/img1.png" alt=""></a>
+        <a href="#img"><img onclick="imgSlider('img/img2.png'); changecircleColor('#eb7495')" src="img/img2.png" alt=""></a>
+        <a href="#img"><img onclick="imgSlider('img/img3.png'); changecircleColor('#d752b1')" src="img/img3.png" alt=""></a>
+    </div>
+</div>
+
+<script>
+
+function imgSlider(anything){
+    document.querySelector('#img').src = anything;
+}
+
+function changecircleColor(color){
+    const circle = document.querySelector('#circle');
+    const starbucks = document.querySelector('#starbucks');
+    circle.style.backgroundColor = color;
+    starbucks.style.color = color;
+
+}
+
+</script>
+</body>
+</html>
